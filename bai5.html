@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const number = 20;  // Số lượng phần tử Fibonacci cần tính tổng
+    let f0 = 0;
+    let f1 = 1;
+    let fn;
+    let tong = f0 + f1;  // Khởi tạo tổng với hai số đầu tiên trong dãy
+    let i = 2;
+
+    do {
+        debugger
+        fn = f0 + f1;
+        tong += fn;
+        f0 = f1;
+        f1 = fn;
+        i++;
+    } while (i < number);
+
+    document.write("Tổng của " + number + " số đầu tiên trong dãy Fibonacci là: " + tong);
+
+</script>
+</body>
+</html>

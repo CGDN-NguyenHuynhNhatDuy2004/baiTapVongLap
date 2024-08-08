@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let temperature=null;
+    do{
+        temperature = parseFloat(+prompt("nhap nhiet do "))
+        if(temperature<20){
+            alert("hay tang nhiet do")
+        }else if(temperature>100){
+            alert("hay giam nhiet do ")
+        }
+
+    }while (temperature<20 || temperature>100)
+    alert("nhiet do binh thuong")
+
+
+</script>
+</body>
+</html>

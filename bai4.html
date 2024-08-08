@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    const number = parseInt(prompt('Nhập vào một số: '));
+    let f0 = 0;
+    let f1 = 1;
+    let fn;
+
+    for (let i = 1; i <= number; i++) {
+        fn = f0 + f1;
+        f0 = f1;
+        f1 = fn;
+
+        if (fn % 5 === 0) {
+            document.write("Số đầu tiên trong dãy Fibonacci chia hết cho 5 là: " + fn);
+            break;
+        }
+    }
+
+
+
+
+
+</script>
+</body>
+</html>

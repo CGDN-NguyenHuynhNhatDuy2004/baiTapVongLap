@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<h1>20 so dau tien trong dãy fibonaci</h1>-->
+<!--<button onclick="displayFibonacci()">hien thi</button>-->
+<!--<p id="fibonacci-sequence"></p>-->
+<script>
+
+    const number = parseInt(prompt('Nhap vao mot so : '));
+    let n1 = 0;
+    let n2 = 1;
+    let nextTerm;
+
+    // console.log('');
+    document.write("Fibonacci Series:" + "<br>")
+
+    for (let i = 1; i <= number; i++) {
+        debugger
+        document.write(n1 + "<br>")
+        nextTerm = n1 + n2;
+        n1 = n2;
+        n2 = nextTerm;
+    }
+</script>
+</body>
+</html>
